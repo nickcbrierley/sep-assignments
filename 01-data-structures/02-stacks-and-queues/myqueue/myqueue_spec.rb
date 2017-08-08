@@ -1,3 +1,4 @@
+require 'rspec/autorun'
 include RSpec
 
 require_relative 'myqueue'
@@ -19,7 +20,14 @@ RSpec.describe MyQueue, type: Class do
   describe "#dequeue" do
     it "removes an item from the front of the queue" do
       q.enqueue("Rob")
+      q.enqueue("Ben")
       expect(q.empty?).to eq false
+      expect(q.head).to eq "Rob"
+      expect(q.tail).to eq "Ben"
+      q.dequeue
+      expect(q.empty?).to eq false
+      expect(q.head).to eq "Ben"
+      expect(q.tail).to eq "Ben"
       q.dequeue
       expect(q.empty?).to eq true
     end
