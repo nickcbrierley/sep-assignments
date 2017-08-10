@@ -1,0 +1,19 @@
+1. What is Spatial Locality and why does it benefit performance?
+It refers to storing elements close to eachother in memorry, it offers faster pulls of data but is limited in size.
+
+2.Compare the performance of an Array to a Linked List using the Benchmark module.
+
+"Array Creation"
+  0.000000   0.000000   0.000000 (  0.002528)
+"Node Creation"
+  0.000000   0.000000   0.000000 (  0.003851)
+"Array Access"
+  0.000000   0.000000   0.000000 (  0.000002)
+"Node Access"
+  0.000000   0.000000   0.000000 (  0.000325)
+"Array Delete"
+  0.000000   0.000000   0.000000 (  0.000006)
+"Node Delete"
+  0.000000   0.000000   0.000000 (  0.000591)
+  
+  As you can see from the benchmarking above the arrays are faster to create and access. This is not suprising because the information in the array is stored next to itself.
