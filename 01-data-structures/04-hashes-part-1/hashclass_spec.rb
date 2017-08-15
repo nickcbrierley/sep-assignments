@@ -1,3 +1,4 @@
+require 'rspec/autorun'
 include RSpec
 
 require_relative 'hash_item'
