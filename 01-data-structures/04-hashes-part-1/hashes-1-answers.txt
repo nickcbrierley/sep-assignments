@@ -1,0 +1,2 @@
+Doubling the array size isn't a good idea becasue the array will grow in size too quickly and it will tie 
+up system memory unnecessarily and make accessing it slower 
