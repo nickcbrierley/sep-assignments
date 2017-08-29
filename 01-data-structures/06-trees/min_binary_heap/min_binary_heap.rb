@@ -1,17 +1,27 @@
 require_relative 'node'
 
-class BinarySearchTree
+class MinBinaryHeap
+  attr_reader :root
 
   def initialize(root)
     @root = root
   end
 
   def insert(root, node)
-     if root.rating < node.rating 
-       root.right.nil? ? root.right = node : insert(root.right, node)
-     else
-       root.left.nil? ? root.left = node : insert(root.left, node)
-     end
+    if root.rating > node.rating
+    @root, node = node, root
+    insert(@root, node)
+    else
+      if root.left.nil?
+        root.left = node
+      elsif root.right.nil? 
+        root.right = node
+      elsif root.left.left != nil && root.left.right != nil
+        insert(root.right, node)
+      else
+        insert(root.left, node)
+      end
+    end
   end
 
   # Recursive Depth First Search
