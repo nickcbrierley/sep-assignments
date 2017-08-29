@@ -1,0 +1,13 @@
+                 user     system      total        real
+tree insert  0.530000   0.010000   0.540000 (  0.534517)
+heap insert  0.100000   0.000000   0.100000 (  0.102294)
+                 user     system      total        real
+tree find    0.000000   0.000000   0.000000 (  0.000012)
+heap find    0.000000   0.000000   0.000000 (  0.000004)
+                 user     system      total        real
+tree delete  0.000000   0.000000   0.000000 (  0.000004)
+heap delete  0.000000   0.000000   0.000000 (  0.000004)
+
+It seems like in general the tree takes more time than the heap, that might be due to how I implemented it.
+after some research I found that binary heaps average insersion is O(1) while for the tree it is O(log(n)).
+Searching in a tree is suposed to be faster, although it isn't in my example. 
