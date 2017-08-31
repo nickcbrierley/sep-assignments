@@ -1,0 +1,29 @@
+def tip(bill, quality)
+    IF quality is poor THEN
+        bill *= 1.1
+    ElSE 
+        bill *= 1.25
+    ENDIF
+end
+
+def wake
+    IF alarm turns on THEN
+        REPEAT
+            hit snoose
+        UNLESS ready to wake up 
+    ENDIF
+end
+
+def blocCheckpoint(assignemnt)
+    IF assignemnt is not nil THEN
+        IF assignemnt is satisfactory THEN
+            approve checkpoint
+        ELSE
+            change assignemnt
+            call blocCheckpoint with new assignemnt
+        ENDIF
+    ELSE    
+        change assignemnt
+        call blocCheckpoint with new assignemnt
+    ENDIF
+end
