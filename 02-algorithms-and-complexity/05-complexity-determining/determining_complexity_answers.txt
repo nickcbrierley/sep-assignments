@@ -1,0 +1,11 @@
+0(1) as it simply just prints out what you pit in.
+
+O(n) it has to loop through the entire collection, if the collection grows it will take more time to complete in proportion to the size of the collection.
+
+O(n) (I think) the data that is stored in this one is in a 2d array. It loops through each in the column then moving over. It is just a different way of holding the information and should take the same time to go through it as the previous example.
+
+O(2^n) for each pass through the algorithm you will run the algorthm 2 more times.
+
+O(n) it just takes the amount of linerally to the input, and each one takes a set time.
+
+O(n^2) worst case it is spit into arrays of 0 and n-1, if this happens every time you (n-1)n simplified as n^2 - n and you can drop the -n as it becomes irrelavent as you reach larger numbers.
