@@ -1,0 +1,24 @@
+Describe an analogy for relating an algorithm that has efficiency O(1) and another algorithm that has O(2^n).
+    O(1) would be like an astroid going trough space without any gravaty on it. O(2^n) would be the same astroid traveling but there was more and more gravity placed behind it slowing it dramatically.
+In plain English, what is the best case scenario for binary search?
+    The element you are serching for is the root. It will always be found first.
+In plain English, what is the worst-case scenario for binary search?
+    The element you are looking for is at the end of the tree, it will have to search through every element to find it.
+In plain English, what is the bounded-case scenario for binary search?
+    It is just somewhere between the best and worst case. 
+Create a graph using the data below. 
+   Stored in chart.jpg
+What's the asymptotic limit as n approaches infinity for the function defined by the values above?
+    Infinity
+What is the Big-O of an algorithm that has the data points above?
+    O(2^n)
+Write a Ruby script that calculates and prints the N number, given an iteration, for linear search in the worst case (similar to the graph above).
+    def power(n)
+        prints 2**n
+    end
+What is the Big-O of binary search?
+    O(n)
+What is the Big-Ω of binary search?
+    Ω(1)
+What is the Big-Ө of binary search?
+    Ө(logn)
